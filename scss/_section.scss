@@ -1,0 +1,78 @@
+.section{
+  background-color: #f6fbff;
+  &--top{
+    &::before{
+      content: '';
+      background-image: url('../images/bg-section-top-mobile-1.svg');
+      background-position: 0 top;
+      background-repeat: no-repeat;
+      display: block;
+      background-color: white;
+      width: 100%;
+      background-size: 100% 100%;
+      height: 30vmin;
+    }
+    &::after{
+      content: '';
+      background-size: 100% 100%;
+      background-image: url('../images/bg-section-bottom-mobile-1.svg');
+      background-repeat: no-repeat;
+      background-position: 0 bottom;
+      display: block;
+      background-color: white;
+      width: 100%;
+      height: 30vmin;
+  
+    }
+    @media ($tablet){
+      &::before{
+        background-image: url('../images/bg-section-top-desktop-1.svg');
+        height: 15vmin;
+      }
+      &::after{
+        background-image: url('../images/bg-section-bottom-desktop-1.svg');
+        height: 15vmin;
+      }
+    }
+  }
+  &--reversed{
+    background-color: white;
+
+  }
+  &--bottom{
+    &::before{
+      content: '';
+      background-image: url('../images/bg-section-top-mobile-2.svg');
+      background-position: 0 top;
+      background-repeat: no-repeat;
+      display: block;
+      background-color: white;
+      width: 100%;
+      background-size: 100% 100%;
+      height: 30vmin;
+    }
+    &::after{
+      content: '';
+      background-size: 100% 100%;
+      background-image: url('../images/bg-section-bottom-mobile-2.svg');
+      background-repeat: no-repeat;
+      background-position: 0 bottom;
+      display: block;
+      background-color: white;
+      width: 100%;
+      height: 30vmin;
+  
+    }
+
+    @media ($tablet){
+      &::before{
+        background-image: url('../images/bg-section-top-desktop-2.svg');
+        height: 15vmin;
+      }
+      &::after{
+        background-image: url('../images/bg-section-bottom-desktop-2.svg');
+        height: 15vmin;
+      }
+    }
+  }
+}

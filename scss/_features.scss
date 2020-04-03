@@ -1,0 +1,16 @@
+.c-features{
+  margin-top: 6rem;
+}
+.c-feature{
+  text-align: center;
+  margin: 1rem auto 5rem auto;
+  width: min-content;
+  &__number{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: $Very-Dark-Cyan;
+  }
+  &__description{
+    color: #8795a0;
+  }
+}

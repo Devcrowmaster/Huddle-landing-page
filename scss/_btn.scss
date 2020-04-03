@@ -1,0 +1,48 @@
+.c-btn{
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s;
+  &--rounded{
+    border-radius: 3rem;
+  }
+  &--large{
+    background-color: $Pink;
+    color: white;
+    font-weight: 700;
+    padding: .8rem 2.5rem;
+    font-size: .7rem;
+    @media ($tablet){
+      font-size: 1.1rem;
+      padding: 1.5rem 5rem;
+    }
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &--outline{
+    font-size: .8rem;
+    border: 1px solid $Pink;
+    color: $Pink;
+    padding: .5rem 1.5rem;
+    @media ($tablet){
+      font-size: 1rem;
+    }
+    &:hover{
+      background-color: $Pink;
+      color: white;
+    }
+  }
+  &--subscribe{
+    border-radius: .2rem;
+    background-color: $Pink;
+    color: white;
+    padding: .8rem 2.2rem;
+    font-size: .9rem;
+    font-weight: 600;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.heading{
+  &--primary{
+    font-family: $Poppins;
+    color: $Very-Dark-Cyan;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 4.5rem;
+    margin-bottom: 1.8rem;
+    @media ($tablet){
+      font-size: 2.5rem;
+    }
+  }
+}

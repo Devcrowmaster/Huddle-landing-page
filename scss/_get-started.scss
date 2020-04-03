@@ -1,0 +1,14 @@
+.c-get-started{
+  padding-top: 4rem;
+  &::after{
+    content: '';
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%;
+    height: 20vmin;
+    margin-top: 14rem;
+  }
+}

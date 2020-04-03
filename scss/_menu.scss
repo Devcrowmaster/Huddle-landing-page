@@ -1,0 +1,30 @@
+.brand{
+  height: 1.3rem;
+  @media ($desktop){
+    height: 2rem;
+  }
+}
+.c-menu{
+  $p : &;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+  
+  &--social{
+    #{$p}__item{
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+    }
+    #{$p}__link{
+      transition: color .3s;
+      color: white;
+      font-size: 1.4rem;
+      &:hover{
+        color: $Pink;
+      }
+    }
+  }
+}

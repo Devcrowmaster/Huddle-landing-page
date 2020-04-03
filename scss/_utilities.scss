@@ -1,0 +1,19 @@
+
+.u-center{
+  text-align: center;
+}
+.u-right{
+  text-align: right;
+}
+.u-mt-3{
+  margin-top: 3rem;
+}
+.u-mb-5{
+  margin-bottom: 5rem;
+}
+.u-md-flex{
+  @media ($tablet){
+    display: flex;
+    justify-content: space-around;
+  }
+}

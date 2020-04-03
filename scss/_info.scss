@@ -1,0 +1,46 @@
+.c-info{
+  $p: &;
+  @media ($tablet){
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 5rem;
+  }
+  &__content{
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+    color: $Very-Dark-Cyan;
+    @media ($tablet){
+      text-align: left;
+    }
+  }
+  &__title{
+    margin: 0;
+    font-family: $Poppins;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  &__description{
+    font-size: .85rem;
+    line-height: 1.5;
+  }
+  &__image{
+    padding-top: 6rem;
+    @media ($tablet){
+      padding: 0;
+
+    }
+  }
+  &--reversed{
+    flex-direction: row-reverse;
+    @media ($tablet){
+      #{$p}__content{
+        grid-row: 1;
+      }
+      #{$p}__image{
+        grid-column: 2/2;  
+      }
+    }
+  }
+}

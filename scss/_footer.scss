@@ -1,0 +1,27 @@
+.c-footer{
+  background-color: $Very-Dark-Cyan;
+  color: white;
+  padding-top: 3rem;
+  &__content{
+    display: grid;
+    gap: 5rem;
+    @media ($tablet){
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  &__info{
+    @media ($tablet){
+      grid-row: 1;
+    }
+    @media ($desktop){
+      width: 60%;
+    }
+  }
+  &__brand{
+    width: 12rem;
+  }
+  &__text{
+    line-height: 1.6;
+    font-size: .9rem;
+  }
+}

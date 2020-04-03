@@ -1,0 +1,15 @@
+.c-intro{
+  &__description{
+    text-align: center;
+    color: $Very-Dark-Cyan;
+    line-height: 1.4;
+    font-size: .95rem;
+    @media ($tablet){
+      width: 70%;
+      margin: 0 auto;
+    }
+    @media ($desktop){
+      width: 45%;
+    }
+  }
+}
